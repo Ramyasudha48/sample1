@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async></script>
+   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+
+   
+    <title>SAMPLE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="canonical" href="#">
+<!--    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+   <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        * {margin: 0px;
+            padding: 0px;outline: none;font-family: 'Exo', sans-serif;
+           box-sizing: border-box;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        img{max-width: 100%;height: auto;}
+        .site-container{max-width: 1170px;margin: auto;}
+        .clear-fix{width:100%;clear:both;}
+/*        .header{width:1366px;height:135px;background-color: aqua;}*/
+        .header-left{width:30%;float: left;padding-top: 1em;
+    padding-bottom: 1em;}
+        .logo{width: 70%;}
+        .header-right {float: right; padding-top: 1em; }
+        .menu {margin: 20px 0;}
+        .menu ul {padding-left: 0;}
+        .menu ul li {float: left;}
+        .menu ul li a {color: #000;font-size: 20px;
+        padding: 10px 20px 10px 20px;}
+        .banner{background-image: url(images/coolwooden.jpg) ;background-repeat: no-repeat; background-size: cover; padding-bottom: 10em; position: relative;}
+        .banner-text {padding-top: 14em;}
+        .banner-head {color: #fff; width: 600px; font-size: 30px;margin-bottom: 2em;}
+        .btn { top: 13em;font-weight: 600;
+        background-color: #000;
+         color: #fff;
+        font-size: 20px;    padding: 0px 42px; height: 55px;   border: none;
+    border-radius: 8px;}
+        .btn:hover {border: 4px solid #000; background-color: transparent; }
+        .content1{padding-top: 5em;}
+        .content1-left{float: left; width: 40%; }
+        .content1-right {float: right; width: 60%;}
+        .content1-left-img {width: 60%;}
+        .content1-right-text{color: #000; font-size: 22px;padding-top: 35px;line-height: 1.7;}
+        .con1-head {font-size: 35px;}
+        
+        .content2{padding: 5em 0 2em  0;}
+        .content2-left{float: left; width: 60%; }
+        .content2-right {float: right; width: 40%;}
+        .content2-right-img {width: 60%;}
+        .content2-left-text{color: #000; font-size: 22px;padding-top: 35px;line-height: 1.7;}
+        .con2-head {font-size: 35px;}
+        
+/*         .content3{padding-top: 5em;}
+        .content3-left{float: left; width: 40%; }
+        .content3-right {float: right; width: 60%;}
+        .content3-left-img {width: 60%;}
+        .content3-right-text{color: #000; font-size: 22px;padding-top: 35px;line-height: 1.7;}*/
+        
+        .footer {background-color: #000;padding: 4em 0;}
+        .fb-icon, .twi-icon, .google-icon, .insta-icon {font-size: 35px; color: #fff;padding: 10px 10px;}
+        .tel {font-size: 20px; color: #fff;}
+        .mail {font-size: 20px; color: #fff;}
+        
+         .hamburger {
+    align-self: center;
+    background: url(Images/hamburger.svg) no-repeat center/30px 24px transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+}
+  
+        amp-sidebar .close-button {
+    background: url(Images/close.svg) no-repeat center/18px transparent;
+    border: 0;
+    height: 58px;
+    right: 13px;
+    top: 0;
+    width: 68px;
+}
+          amp-sidebar .menu-item a {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 44px;
+    padding: 30px 35px 30px 25px;
+              border-bottom: solid 1px #ededed;
+    color: #000;
+    display: block;
+    position: relative;
+    text-transform: none;
+}
+
+        .amp-sidebar-mask {height: 100vh;background: #fff;width: 70%;}
+        
+        @media (max-width:1024px) {
+            .site-container {max-width: 980px;}
+            .header-right {padding-top: 10px;}
+        }
+        
+        
+        @media (max-width:768px) {
+            .site-container {
+    max-width: 680px;
+            }
+            .header-right { padding-top: 0em;}
+            .banner-text {
+    padding-top: 9em;
+}
+            .content1-right-text, .content2-left-text {font-size: 16px;}
+            .content1-left-img, .content2-right-img {
+    width: 85%;
+}
+        }
+        
+        
+        @media (max-width:425px) {
+            .banner {    background-position: center center;}
+             .header-left {float: none;clear: both;width: 50%; text-align: center;margin: auto;}
+            .hamburger {display: block;margin-top: -4em;margin-left: 27em;}
+            .menu {display: none;}
+            .banner-head {width: 406px;
+    font-size: 18px;}
+            .content1-left, .content2-right, .content1-right, .content2-left {float: none; width: 100%; clear: both;}
+            .site-container {
+    max-width: 400px;
+}.content1-left-img, .content2-right-img {
+    width: 68%;
+    margin-top: 30px;
+}
+        }
+        
+       
+        @media (max-width: 375px) {
+            .hamburger {margin-left: 24em;}
+            .banner-head {
+    width: 368px;}
+            .site-container {
+    max-width: 350px;
+}.content1 {
+    padding-top: 3em;
+            }.content2 {padding-top: 3em;}
+        }
+        @media(max-width:360px){
+            .banner-head{    font-size: 17px;width: 335px;}
+            .site-container {
+    max-width: 336px;
+}
+        }
+        @media(max-width:320px){
+            .hamburger{    margin-top: -47px;    margin-left: 20em;}
+            .banner-head {
+    font-size: 14px;
+    width: 300px;
+}.site-container {
+    max-width: 300px;
+}
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="header">
+<div class="site-container">
+            <div class="header-left">
+             <center> <amp-img src="images/logo-800x188.png" width="800" height="188" layout="responsive" class="logo"></amp-img></center>
+            </div>
+            <div class="header-right">
+              <div class="menu">
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#content1">ABOUT</a></li>
+                <li><a href="#content2">SERVICES</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+                
+            </ul>
+        </div>  
+            </div>
+            <div class="clear-fix"></div>
+            </div>
+            
+        </div>
+        
+        <button on="tap:sidebar.toggle"
+  class="hamburger ampstart-btn caps m2"></button>
+        <div class="clear-fix"></div>
+        
+          <amp-sidebar id="sidebar"
+  layout="nodisplay"
+  side="right" class="amp-sidebar-mask">
+<button type="reset" class="close-button"  on="tap:sidebar.toggle"></button>
+  <ul class="nav-ul-style">
+                <li class="menu-item">  <a href="#">HOME</a></li>
+                <li class="menu-item">  <a href="#about">ABOUT</a></li>
+                <li class="menu-item">  <a href="#services">SERVICES</a></li>
+                 <li class="menu-item">  <a href="#footer">CONTACT</a></li>
+   
+  </ul>
+</amp-sidebar>
+<div class="clear-fix"></div>
+        
+        <div class="banner">
+         <div class="site-container">
+          <center><div class="banner-text">
+          <h3 class="banner-head">The holiday season can be a chaotic time, both professionally and personally.</h3>
+           <center> <a href="#footer"><button class="btn">Know More</button></a></center>
+           </div></center>
+           </div>
+        </div>
+        
+        <div class="content1" id="content1">
+           <div class="site-container">
+               <center><h2 class="con1-head">About</h2></center>
+                <div class="content1-left">
+               <center> <amp-img src="images/home-business.png" width="200" height="200" layout="responsive" class="content1-left-img"></amp-img></center>
+            </div>
+              <div class="content1-right">
+                     <p class="content1-right-text">The holiday season can be a chaotic time, both professionally and personally. Ample upfront planning can be the make or break factor for a successful holiday season. Vistaprint will share marketing secrets to help your small business create a holiday plan you can stick to and ensures you reach your goals this holiday season</p>
+              </div>
+               <div class="clear-fix"></div>
+           </div>
+           
+           
+        
+           
+           
+        </div>
+        <div class="content2" id="content2">
+           <div class="site-container">
+               <center><h2 class="con2-head">Services</h2></center>
+                <div class="content2-left">
+                <p class="content2-left-text">The holiday season can be a chaotic time, both professionally and personally. Ample upfront planning can be the make or break factor for a successful holiday season. Vistaprint will share marketing secrets to help your small business create a holiday plan you can stick to and ensures you reach your goals this holiday season</p>
+            </div>
+              <div class="content2-right">
+                    <center> <amp-img src="images/home-business.png" width="200" height="200" layout="responsive" class="content2-right-img"></amp-img></center>
+                    
+              </div>
+               <div class="clear-fix"></div>
+           </div>
+             
+        </div>
+        
+       <!-- <div class="content3">
+           <div class="site-container">
+                <div class="content3-left">
+               <center> <amp-img src="images/home-business.png" width="200" height="200" layout="responsive" class="content3-left-img"></amp-img></center>
+            </div>
+              <div class="content3-right">
+                     <p class="content3-right-text">The holiday season can be a chaotic time, both professionally and personally. Ample upfront planning can be the make or break factor for a successful holiday season. Vistaprint will share marketing secrets to help your small business create a holiday plan you can stick to and ensures you reach your goals this holiday season</p>
+              </div>
+               <div class="clear-fix"></div>
+           </div>
+           
+           
+        
+           
+           
+        </div>
+        -->
+        
+        <div class="footer" id="footer">
+            <div class="site-container">
+               <center>
+                   <a href="#"><i class="fab fa-facebook-square fb-icon"></i></a>
+                   <a href="#"><i class="fab fa-twitter-square twi-icon"></i></a>
+                   <a href="#"><i class="fab fa-google-plus-square google-icon"></i></a>
+                   <a href="#"><i class="fab fa-instagram insta-icon"></i></a>
+                   
+               </center> 
+               <br>
+               <center><a href="tel:1234567890" class="tel">1234567890</a></center><br>
+               <center><a href="mailto:info@gmail.com" class="mail">info@gmail.com</a></center>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
